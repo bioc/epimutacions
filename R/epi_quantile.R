@@ -210,6 +210,9 @@ epi_quantile <- function(case,
     if(nrow(flag_df) == 0) {
       return(empty)
     }
+    if(all(is.na(flag_df))){
+      return(empty)
+    }
     do.call(rbind, lapply(unique(flag_df$region), 
                           function(reg) {
       x <- flag_df[flag_df$region == reg, ]

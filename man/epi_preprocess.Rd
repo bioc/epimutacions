@@ -68,12 +68,11 @@ different minfi package preprocess methods:
 
 # The reference panel for this example is available in 
 #epimutacionsData (ExperimentHub) package
-
+\donttest{
 library(ExperimentHub)
 eh <- ExperimentHub()
 query(eh, c("epimutacionsData"))
 reference_panel <- eh[["EH6691"]]
-\donttest{
 cases_dir <- system.file("extdata", package = "epimutacionsData")
 #Preprocessing
 
