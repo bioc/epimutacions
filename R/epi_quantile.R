@@ -207,7 +207,8 @@ epi_quantile <- function(case,
     if(nrow(flag_df) == 0) {
       return(empty)
     }
-    if(is.na(flag_df$chr) & is.na(flag_df$pos)){
+    
+    if(all(is.na(flag_df$chr) & is.na(flag_df$pos))){
       return(empty)
     }
     do.call(rbind, lapply(unique(flag_df$region), 
@@ -235,6 +236,7 @@ epi_quantile <- function(case,
       }
     }))
   }
+
   
   # We collapse the CpGs in regions and format the output
   clean_sup <- collapse_regions(reg_sup, 
