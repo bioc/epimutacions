@@ -1,6 +1,6 @@
 Package: epimutacions
 Title: Robust outlier identification for DNA methylation data
-Version: 1.6.0
+Version: 1.7.0
 Authors@R: 
     c(person("Dolors", "Pelegri-Siso", ,"dolors.pelegri@isglobal.org", role = c("aut", "cre"),comment = c(ORCID = "0000-0002-5993-3003")),
       person("Juan R.", "Gonzalez", ,"juanr.gonzalez@isglobal.org", role = "aut", comment = c(ORCID = "0000-0003-3267-2146")),
